@@ -13,9 +13,9 @@ public class C02_BeforeAfter {
                    after metodu icin tearDown'u seceriz.
                    before methodu icin setup'i seceriz.
                    test methodu icin de test'i seceriz
-                    JUnit frameworkunde testlerimizi siralama yapabilmek icin ekstra bir notasyon yoktur.
-        Eger belli bir siralamada calistirmak istersek
-         method isimlerini alfabetik ve sayisal olarak belirtmemiz gerekir
+          JUnit frameworkunde testlerimizi siralama yapabilmek icin ekstra bir notasyon yoktur.
+           Eger belli bir siralamada calistirmak istersek
+            method isimlerini alfabetik ve sayisal olarak belirtmemiz gerekir
 
 
                     */
