@@ -9,10 +9,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
+import utilities.TestBase;
 
 import java.time.Duration;
 
-public class C01_DropDown {
+public class C01_DropDown extends TestBase {
     /*
     DropDown:Altbasliklarin oldugu acilir menu listesidir
     DropDown 3 adimda handle edilir
@@ -54,7 +55,8 @@ public class C01_DropDown {
         Select select=new Select(ddmYil);//select objesi olusturduk
         //select.selectByVisibleText("2020");//nasil gorunuyorsa oyle yaziyoruz-->en cok bu tercih edilir
          // select.selectByIndex(3);-->indexle aldik 2020 yi
-            select.selectByValue("2020");//-->value ile aldik 2020 yi
+          //  select.selectByValue("2020");//-->value ile aldik 2020 yi
+        ddmVisibleText(ddmYil,"2020");
 
         // Ay Dropdown'undan "August" seciniz
         WebElement ddmAy=driver.findElement(By.xpath("//select[@id='month']"));

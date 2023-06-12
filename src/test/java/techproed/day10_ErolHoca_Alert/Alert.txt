@@ -1,0 +1,20 @@
+@Test @Ignore
+public void ignore() {
+    System.out.println("Bu Test Daha sonra yapilacak...");
+}
+
+//--> Çalışmasını istemediğimiz test notasyonundan sonra (@Test) @Ignore notasyonu kullanırız
+
+                         Alert Nedir ?
+            Alert uyari veya bilgi mesaji iceren pencere
+js Alert'u nasil handle ederiz ?
+            driver'i switchTo() mehodu ile alert() methodunu kullaranarak gecis yapar, accept() veya dismiss() methodlari ile
+            handle ederiz.
+
+
+
+
+
+
+
+
