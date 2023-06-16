@@ -75,5 +75,10 @@ public abstract class TestBase {//abstract yapinca obje olusturulmuyor
         List<String> pencereler=new ArrayList<>(driver.getWindowHandles());
         driver.switchTo().window(pencereler.get(index));
     }
+    //getTextAlert
+    public String getTextAlert(){
+        return driver.switchTo().alert().getText();
+    }
 
+   
 }

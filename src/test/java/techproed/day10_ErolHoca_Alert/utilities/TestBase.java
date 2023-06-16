@@ -50,6 +50,7 @@ public abstract class TestBase {
     public void dismissAlert(){
         driver.switchTo().alert().dismiss();
     }
+
     //getTextAlert
     public String getTextAlert(){
         return driver.switchTo().alert().getText();
