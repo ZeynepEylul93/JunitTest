@@ -68,6 +68,7 @@ public void test01() throws InterruptedException {
 
         //Dropdown menuden sırasıyla ilk 5 başlığı (Arts&Crafts ile başlayıp Books'a kadar Books dahil) seçip başlık altındakileri aratalım.
         //Her aramada sayfa başlığını yazdıralım
+        /*
         int sayac = 1;
         for (WebElement w : select.getOptions()) {
             Select option = new Select(driver.findElement(By.xpath("//*[@id='searchDropdownBox']")));
@@ -84,5 +85,16 @@ public void test01() throws InterruptedException {
 
             }
         }
+*/
+        for (int i = 1; i <6 ; i++) {
+            Select option = new Select(driver.findElement(By.xpath("//*[@id='searchDropdownBox']")));
+            option.selectByIndex(i);
+            driver.findElement(By.xpath("//*[@type='submit']")).click();
+            System.out.println(driver.getTitle());
+            Thread.sleep(2000);
+            driver.navigate().back();
+            Thread.sleep(2000);
+        }
+
     }
 }
