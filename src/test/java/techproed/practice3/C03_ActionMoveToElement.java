@@ -48,7 +48,7 @@ public class C03_ActionMoveToElement extends TestBase {
 
         driver.findElement(By.xpath("//input[@class='a-button-input']")).click();
 
-   // acilan yeni sayfadanin Title'inin Elektronik icerdigini test ediniz
+   // acilan yeni sayfanin Title'inin Elektronik icerdigini test ediniz
        Set<String> windowHandleSet= driver.getWindowHandles();
 
       String sayfa2Handle="";

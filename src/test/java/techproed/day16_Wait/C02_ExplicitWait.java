@@ -28,7 +28,7 @@ public class C02_ExplicitWait extends TestBase {
 
         //==> Hello World! yazısının görünürlügünü test edin
         WebElement helloWorldYazisi = driver.findElement(By.xpath("//h4[text()='Hello World!']"));
-        visiblewait(helloWorldYazisi,100);
+        //visiblewait(helloWorldYazisi,100);
         Assert.assertTrue(helloWorldYazisi.isDisplayed());
 
     }

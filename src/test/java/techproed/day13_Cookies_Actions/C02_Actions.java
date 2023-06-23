@@ -34,6 +34,6 @@ public class C02_Actions extends TestBase {
         bekle(2);
 
         //Tamam diyerek alert'i kapatın
-        alertAccept();//-->TestBase deki methodu kullandık --> driver.switchTo().alert().accept()
+       // alertAccept();//-->TestBase deki methodu kullandık --> driver.switchTo().alert().accept()
     }
 }

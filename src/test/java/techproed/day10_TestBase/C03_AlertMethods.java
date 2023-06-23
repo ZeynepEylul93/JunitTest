@@ -69,6 +69,9 @@ public class C03_AlertMethods extends TestBase {
 
     }
 
+    private void alertAccept() {
+    }
+
 
     @Test
     public void dismissAlert() throws InterruptedException {
@@ -89,7 +92,7 @@ public class C03_AlertMethods extends TestBase {
         //    uyarıdaki Cancel butonuna tıklayın
 
         //driver.switchTo().alert().dismiss();
-        alertDismiss();
+       // alertDismiss();
 
        bekle(3);
 
@@ -110,12 +113,12 @@ public class C03_AlertMethods extends TestBase {
         driver.findElement(By.xpath("//button[text()='Click for JS Prompt']")).click();
 
         //    uyarıdaki mesajı konsolda yazdırın,
-        alertText();
+       // alertText();
        // System.out.println(driver.switchTo().alert().getText());
         //gettext uyaridaki mesaji bize string olarak getirir
 
         //   uyarıdaki metin kutusuna isminizi yazin,
-        alertPrompt("Zeynep");
+       // alertPrompt("Zeynep");
         //driver.switchTo().alert().sendKeys("Zeynep");
 
         //           OK butonuna tıklayın
