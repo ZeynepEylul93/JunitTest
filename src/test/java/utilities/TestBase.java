@@ -219,7 +219,57 @@ public abstract class TestBase {
         }
     }
 
+    public void scroll(WebElement element){
+       JavascriptExecutor js= (JavascriptExecutor) driver;
+        js.executeScript("arguments[0].scrollIntoView(true);",element);
 
-}
+    }
+
+    public void scrollHome(){//sayfanin ustune gidecek
+
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollTo(0,-document.body.scrollHeight)");
+    }
+
+    public void scrollEnd(){//Sayfanin altina gidecek
+      JavascriptExecutor  js= (JavascriptExecutor) driver;
+        js.executeScript("window.scrollTo(0,document.body.scrollHeight)");
+    }
+
+
+    public void sendKeysJS(WebElement element, String text){
+
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("arguments[0].value='"+text+"'",element);
+    }
+
+    public void sendAttributeJS(WebElement element, String text){
+
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("arguments[0].setAttribute('value','"+text+"')",element);
+    }
+
+
+    //JS Scroll WE Method
+    public void jsScrollWE(WebElement element){
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("arguments[0].scrollIntoView(true);", element);
+    }
+
+    //JS SendKeys() metodu
+
+    public  void jsSendKeys(String text,WebElement element){
+        JavascriptExecutor js= (JavascriptExecutor) driver;
+        js.executeScript("arguments[0].value='"+text+"'",element);
+    }
+
+    //JS setAttribute() Method
+    public void jsSetAttribute(String attribute,String text,WebElement element){
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("arguments[0].setAttribute('"+attribute+"','"+text+"')",element);
+    }
+
+    }
+
 
 
