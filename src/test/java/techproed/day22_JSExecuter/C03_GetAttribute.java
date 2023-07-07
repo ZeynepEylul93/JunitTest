@@ -56,6 +56,5 @@ ile alabiliriz. Yukarıdaki örnekte sayfadaki tarih webelementini js executor i
         JavascriptExecutor js= (JavascriptExecutor) driver;
         js.executeScript("arguments[0].style.color='red';",button);
 
-
     }
 }
